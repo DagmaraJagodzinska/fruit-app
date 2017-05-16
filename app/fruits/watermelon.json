@@ -1,0 +1,27 @@
+{
+    "description": "the best desription", 
+    "taste": {
+        "sour": true, 
+        "sweet": true, 
+        "bitter": false, 
+        "salty": false
+    }, 
+    "id": "watermelon", 
+    "images": [
+        "img/fruits/watermelon.1.jpg",
+        "img/fruits/watermelon.2.jpg"
+    ], 
+    "name": "Watermelon", 
+    "sizeAndWeight": {
+        "dimensions": [
+            "300.0 mm (w)", 
+            "400.0 mm (h)"
+        ], 
+        "weight": "2000.0 grams",
+        "biggerThanHand": true
+    }, 
+    "storage": {
+        "fridge": true,
+        "date": "two week"
+    }
+}

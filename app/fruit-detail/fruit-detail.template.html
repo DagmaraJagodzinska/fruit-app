@@ -1,0 +1,47 @@
+<img ng-src="{{$ctrl.mainImageUrl}}" class="fruit" />
+
+<h1>{{$ctrl.fruit.name}}</h1>
+
+<p>{{$ctrl.fruit.description}}</p>
+
+<ul class="fruit-thumbs">
+  <li ng-repeat="img in $ctrl.fruit.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)"/>
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in $ctrl.fruit.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{$ctrl.fruit.sizeAndWeight.weight}}</dd>
+      <dt>Bigger than hand</dt>
+      <dd>{{$ctrl.fruit.sizeAndWeight.biggerThanHand}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage</span>
+    <dl>
+      <dt>Fridge:</dt>
+      <dd>{{$ctrl.fruit.storage.fridge}}</dd>
+      <dt>Date exp</dt>
+      <dd>{{$ctrl.fruit.storage.date}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Taste</span>
+    <dl>
+      <dt>Sour</dt>
+      <dd>{{$ctrl.fruit.taste.sour}}</dd>
+      <dt>Sweet</dt>
+      <dd>{{$ctrl.fruit.taste.sweet}}</dd>
+      <dt>Bitter</dt>
+      <dd>{{$ctrl.fruit.taste.bitter}}</dd>
+      <dt>Sweet</dt>
+      <dd>{{$ctrl.fruit.taste.salty}}</dd>
+    </dl>
+  </li>
+</ul>
