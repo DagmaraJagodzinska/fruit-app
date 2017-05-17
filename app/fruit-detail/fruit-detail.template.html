@@ -6,7 +6,7 @@
 
 <ul class="fruit-thumbs">
   <li ng-repeat="img in $ctrl.fruit.images">
-    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)"/>
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" ng-dblclick="$ctrl.onDblclick(img)"/>
   </li>
 </ul>
 
@@ -19,14 +19,14 @@
       <dt>Weight</dt>
       <dd>{{$ctrl.fruit.sizeAndWeight.weight}}</dd>
       <dt>Bigger than hand</dt>
-      <dd>{{$ctrl.fruit.sizeAndWeight.biggerThanHand}}</dd>
+      <dd>{{$ctrl.fruit.sizeAndWeight.biggerThanHand | checkmark}}</dd>
     </dl>
   </li>
   <li>
     <span>Storage</span>
     <dl>
       <dt>Fridge:</dt>
-      <dd>{{$ctrl.fruit.storage.fridge}}</dd>
+      <dd>{{$ctrl.fruit.storage.fridge | checkmark}}</dd>
       <dt>Date exp</dt>
       <dd>{{$ctrl.fruit.storage.date}}</dd>
     </dl>
@@ -35,13 +35,13 @@
     <span>Taste</span>
     <dl>
       <dt>Sour</dt>
-      <dd>{{$ctrl.fruit.taste.sour}}</dd>
+      <dd>{{$ctrl.fruit.taste.sour | checkmark}}</dd>
       <dt>Sweet</dt>
-      <dd>{{$ctrl.fruit.taste.sweet}}</dd>
+      <dd>{{$ctrl.fruit.taste.sweet | checkmark}}</dd>
       <dt>Bitter</dt>
-      <dd>{{$ctrl.fruit.taste.bitter}}</dd>
+      <dd>{{$ctrl.fruit.taste.bitter | checkmark}}</dd>
       <dt>Sweet</dt>
-      <dd>{{$ctrl.fruit.taste.salty}}</dd>
+      <dd>{{$ctrl.fruit.taste.salty | checkmark}}</dd>
     </dl>
   </li>
 </ul>

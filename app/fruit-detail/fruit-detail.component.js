@@ -4,18 +4,16 @@ angular.
   module('fruitDetail').
   component('fruitDetail', {
     templateUrl: 'fruit-detail/fruit-detail.template.html',
-    controller: ['$http', '$routeParams',
-      function FruitDetailController($http, $routeParams) {
+    controller: ['$routeParams', 'Fruit',
+      function FruitDetailController($routeParams, Fruit) {
         var self = this;
+        self.fruit = Fruit.get({fruitId: $routeParams.fruitId}, function(fruit) {
+          self.setImage(fruit.images[0]);
+        });
 
         self.setImage = function setImage(imageUrl) {
           self.mainImageUrl = imageUrl;
         };
-
-        $http.get('fruits/' + $routeParams.fruitId + '.json').then(function(response) {
-          self.fruit = response.data;
-          self.setImage(self.fruit.images[0]);
-        });
       }
     ]
   });

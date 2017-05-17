@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('fruitList', []);
+angular.module('fruitList', ['core.fruit']);

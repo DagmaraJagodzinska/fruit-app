@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('fruitDetail', [
-  'ngRoute'
+  'ngRoute',
+  'core.fruit'
 ]);

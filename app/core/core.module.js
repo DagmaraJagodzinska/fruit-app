@@ -1,4 +1,4 @@
 'use strict';
 
 // core module
-angular.module('core', []);
+angular.module('core', ['core.fruit']);

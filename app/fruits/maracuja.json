@@ -9,7 +9,9 @@
     "id": "maracuja", 
     "images": [
         "img/fruits/maracuja.1.jpg",
-        "img/fruits/maracuja.2.jpg"
+        "img/fruits/maracuja.2.jpg",
+        "img/fruits/maracuja.3.jpg",
+        "img/fruits/maracuja.4.jpg"
     ], 
     "name": "Maracuja", 
     "sizeAndWeight": {

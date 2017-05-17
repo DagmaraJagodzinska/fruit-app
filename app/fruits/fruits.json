@@ -1,20 +1,20 @@
 [
     {
-        "age": 0, 
+        "size": 0, 
         "id": "maracuja", 
         "imageUrl": "img/fruits/maracuja.1.jpg", 
         "name": "Maracuja", 
         "snippet": "is one of the many species of passion flower"
     }, 
     {
-        "age": 3, 
+        "size": 2, 
         "id": "pineapple", 
         "imageUrl": "img/fruits/pineapple.1.jpg", 
         "name": "Pineapple", 
         "snippet": "The word pineapple in English was first recorded to describe the reproductive organs"
     }, 
     {
-        "age": 2, 
+        "size": 3, 
         "id": "watermelon", 
         "imageUrl": "img/fruits/watermelon.1.jpg", 
         "name": "Watermelon", 
